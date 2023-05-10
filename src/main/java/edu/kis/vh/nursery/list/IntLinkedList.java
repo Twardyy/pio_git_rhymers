@@ -1,7 +1,16 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+class IntLinkedList {
+    private class Node {
 
+        public int value;
+        public Node prev, next;
+
+        public Node(int i) {
+            value = i;
+        }
+
+    }
     public static final Node NULL = null;
     public static final int LIST_EMPTY = -1;
     public static final boolean LIST_NOT_FULL = false;
